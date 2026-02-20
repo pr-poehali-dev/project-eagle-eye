@@ -82,12 +82,12 @@ const ArcGalleryHero = ({
                 }}
               >
                 <div
-                  className="rounded-2xl shadow-xl overflow-hidden ring-1 ring-border bg-card transition-transform hover:scale-105 w-full h-full"
+                  className="rounded-2xl shadow-xl shadow-primary/10 overflow-hidden ring-1 ring-primary/20 bg-card transition-transform hover:scale-105 hover:shadow-primary/30 w-full h-full"
                   style={{ transform: `rotate(${angle / 4}deg)` }}
                 >
                   <img
                     src={src}
-                    alt=""
+                    alt="Карта Таро"
                     className="block w-full h-full object-cover"
                     draggable={false}
                   />
@@ -100,18 +100,19 @@ const ArcGalleryHero = ({
 
       <div className="relative z-10 flex-1 flex items-center justify-center px-6 -mt-40 md:-mt-52 lg:-mt-64">
         <div className="text-center max-w-2xl px-6 opacity-0 animate-fade-in" style={{ animationDelay: '800ms', animationFillMode: 'forwards' }}>
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-            Визуальная галерея для вашего проекта
+          <p className="text-sm uppercase tracking-[0.3em] text-primary font-medium mb-4">✦ Таро и карточные расклады ✦</p>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground font-serif">
+            Раскройте тайны судьбы через карты
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Создавайте впечатляющие презентации изображений за считанные минуты.
+            Древняя мудрость карт Таро поможет найти ответы на ваши вопросы и увидеть скрытые пути.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <button className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-              Начать создавать
+              Получить расклад
             </button>
             <button className="w-full sm:w-auto px-6 py-3 rounded-full border border-border hover:bg-accent hover:text-accent-foreground transition-all duration-200">
-              Узнать больше
+              О раскладах
             </button>
           </div>
         </div>
